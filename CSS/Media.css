@@ -1,0 +1,310 @@
+@media only screen and (max-width:1800px) {
+    html {
+        font-size: 15px;
+    }
+
+    .broadcast > * {
+        margin: 2rem;
+    }
+
+    pre#broadcast {
+        font-size: 1.75rem;
+        margin: 0;
+    }
+
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+
+    html {
+        font-size: 13.5px;
+    }
+
+    h1 {
+	font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 13px;
+    }
+
+    h1 {
+	font-size: 2.5rem;
+    }
+
+    .d4nav-bar {
+	width: 38%;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .d4nav-bar {
+	width: 40%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .d4nav-bar {
+        width: 42%;
+    }
+    .d4nav-bar a {
+	   min-width: 30%;
+    }
+
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 1.7rem;
+    }
+
+    .tollbridge strong{
+        font-size: 1.2rem;
+    }
+
+    .tollbridge td {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:808px) {
+    html {
+        font-size: 9.25px;
+    }
+
+    .quick-links li {
+	   font-size: 1.5rem;
+    }
+
+    pre#broadcast > * {
+        font-size: 1.75rem;
+    }
+
+    .d4nav-bar {
+	width: 50%;
+    }
+}
+
+@media only screen and (max-width:790px) {
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width:781px) {
+    .quick-links li {
+	font-size: 1.05rem;
+    }
+
+
+}
+
+@media only screen and (max-width:762px) {
+    .quick-links li {
+	font-size: 1.05rem;
+    }
+
+    .quick-links nav {
+	padding: .75rem;
+    }
+
+    .d4nav-bar {
+        width: 55%;
+    }
+
+     pre#broadcast {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:743px) {
+    pre#broadcast > * {
+        font-size: 1.5rem;
+    }
+
+    table#table {
+        width: 58rem;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width:724px) {
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 1.45rem;
+    }
+
+     pre#broadcast {
+        font-size: 1.45rem;
+    }
+
+    #table {
+        width: 58rem;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (max-width:706px) {
+    html {
+        font-size: 9px;
+    }
+
+    #table {
+        width: 58rem;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width:664px) {
+    .quick-links li {
+	font-size: 1.1rem;
+    }
+
+    .d4nav-bar {
+        width: 65%;
+    }
+
+
+}
+
+@media only screen and (max-width:635px) {
+    pre#broadcast mark, pre#broadcast strong {
+        font-size: 1.3rem;
+    }
+
+     pre#broadcast {
+        font-size: 1.3rem;
+    }
+
+    .quick-links li {
+	font-size: .95rem;
+    }
+
+    html {
+	font-size: 9px;
+    }
+}
+
+@media only screen and (max-width:568px) {
+    html {
+        font-size: 8.5px;
+    }
+    .d4nav-bar a {
+        font-size: 1.25rem;
+    }
+
+    .quick-links li {
+	   font-size: 1rem;
+    }
+
+    .d4nav-bar {
+	width: 52%;
+    }
+
+}
+
+@media only screen and (max-width:535px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width:516px) {
+    .quick-links li {
+	   font-size: .9rem;
+    }
+
+}
+
+@media only screen and (max-width:498px) {
+    html {
+	   font-size: 7.5px;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .d4nav-bar a {
+        font-size: .9rem;
+    }
+
+    .d4nav-bar {
+        width: 70%;
+    }
+
+    .quick-links li {
+	   font-size: .85rem;
+    }
+}
+
+@media only screen and (max-width:456px) {
+    html {
+	   font-size: 7px;
+    }
+
+    .broadcast > * {
+        font-size: .25rem;
+    }
+
+    .d4nav-bar {
+        width: 65%;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+    html {
+	   font-size: 6.5px;
+    }
+
+    .d4nav-bar {
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width:380px) {
+    html {
+	   font-size: 5.75px;
+    }
+
+}
+
+@media only screen and (max-width:337px) {
+    html {
+	   font-size: 5px;
+    }
+
+}
+
+@media only screen and (max-width:295px) {
+    html {
+	   font-size: 4.25px;
+    }
+
+}

@@ -1,0 +1,85 @@
+.header {
+	text-align: center;
+}
+
+.county {
+  display: none;
+
+}
+
+.postMile {
+	display: flex:
+	justify-content: space-between;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+br {
+    max-height: 2rem;
+    min-height: 2rem;
+    font-size: .85rem;
+}
+
+th {
+    text-align: center;
+
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+
+}
+
+.flex-btw {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
+	  justify-content: space-around;
+}
+
+
+h6 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.crossroad {
+		border-bottom: 1px dashed black;
+
+}
+
+.unit {
+    margin: .5rem;
+		margin-left: 10rem;
+		margin-right: auto;
+		background-color: black;
+    display: none;
+}
+
+#road, #bridge, #landscape, #tree {
+		margin: 0;
+		padding: 0;
+		width: 5.6rem;
+		text-align: center;
+    font-size: 1.5rem;
+}
+
+
+div#outputPMS {
+		height: 30rem;
+		overflow: scroll;
+}
+
+#outputPMS a {
+		font-size: 1.7rem;
+}

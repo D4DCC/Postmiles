@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1300px){
+    #outputPMS a {
+        font-size: 1.5rem;
+
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #outputPMS a {
+        font-size: 1.2rem;
+
+    }
+}
+
+@media only screen and (max-width: 888px){
+    #outputPMS a {
+        font-size: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #outputPMS a {
+        font-size: .75rem;
+
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #outputPMS a div {
+        min-width: 5rem;
+
+    }
+
+    #outputPMS table{
+      overflow: visible;
+    }
+}

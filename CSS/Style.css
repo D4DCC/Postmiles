@@ -1,0 +1,546 @@
+html {
+  overflow: scroll;
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  background: linear-gradient(to right, white, midnightblue, white);
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+div {
+  margin: .25rem;
+  padding: .5rem 0;
+  background-color: white;
+  border: 1.5px solid black;
+  background: radial-gradient(circle, white, white, midnightblue);
+  box-shadow: 1px 1px 5px;
+  border-radius: .35rem;
+}
+
+h1, h2, h3 {
+  padding: .5rem;
+  margin: 0;
+  border-radius: .35rem;
+}
+
+.d4header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: .75rem .05rem 3rem .05rem;
+  width: 100%;
+  height: auto;
+  max-height: 16rem;
+  background-image: url("banner-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+header#header {
+}
+
+span {
+  margin-right: .75rem;
+}
+
+.d4h1 {
+  text-shadow: 2px 5px 10px;
+  background-color: white;
+  background: radial-gradient(white, white, midnightblue);
+  color: black;
+  border: .2rem solid blue;
+  border-radius: .35rem;
+}
+
+.d4nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  width: 32%;
+  height: auto;
+}
+
+.d4nav-bar a {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: .5rem;
+  width: auto;
+  background-color: hsla(50,50%,100%,0.5);
+  border-radius: .5rem;
+  min-width: 30%;
+  max-width: 30%;
+}
+
+.d4nav-bar a:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
+.postmile-img {
+  color: white;
+  background-image: url('../Resources/Images/highway.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1.3;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1.3;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 1.3;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: .35rem;
+  color: blue;
+  background-color: hsla(50,50%,100%,0.5);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+  background: radial-gradient(ellipse, black, midnightblue, white);  
+  transform: scale(1.03);
+}
+
+a:active {
+    box-shadow: none;
+    transform: scale(1);
+}
+
+nav ul:nth-child(odd) {
+  margin: .25rem;
+}
+
+li {
+  list-decoration: none;
+  padding: .5rem;
+  width: 100%;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.quick-links a {
+  text-align: center;
+  margin: .25rem;
+  min-width: 22%;
+  background-color: hsla(254, 0%, 84%, 1);
+  box-shadow: 1px 2px 1px 1px grey;
+  display: flex;
+}
+
+.quick-links a:hover {
+  background-color: black;
+  box-shadow: 3px 3px 3px 2px hsla(0,50%,10%,0.5);
+  transform: scale3d(-1px, -1px, -1px);
+  
+}
+
+.quick-links a:active {
+  box-shadow: none;
+  transform: scale(1);
+}
+
+.quick-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Table for Bridges */
+
+table {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: scroll;
+}
+
+td {
+  min-height: 2.5rem;
+  min-width: 0;
+  padding: .1rem;
+}
+
+.to {
+  min-width: 0;
+  
+}
+
+.to div {
+  margin: .2rem 0;
+  padding: .5rem 0;
+  background-color: inherit;
+  border: none;
+}
+
+thead, tbody, tr, th, td {
+  padding: 1.1rem;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: .35rem;
+}
+
+th p {
+  display: inline;
+}
+
+#space {
+  text-decoration: none;
+}
+
+th:nth-child(6n) {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.tollbridge td, .tollbridge th {
+  min-width: 0;
+  height: 1rem;
+  vertical-align: center;
+  padding: inherit;
+  font-size: inherit;
+}
+
+.northbay th, .southbay th, .westbay th, .eastbay th, .deltabay th {
+  background-color: hsla(50,10%,55%,1);
+  font-weight: 900;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+.tollbridge th {
+  background-color: hsla(50,10%,55%,1);
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+tr:nth-child(even), td:first-child {
+  font-weight: bold;
+  background-color: hsla(207, 100%, 68%, 1);
+}
+
+tr:nth-child(2n+1) {
+  background-color: hsla(207, 100%, 83%, 1);
+}
+
+td:first-child {
+  background-color: hsla(207, 100%, 21%, 1);
+  color: white;
+}
+
+.northbay td:first-child, .eastbay td:first-child, .deltabay td:first-child, .southbay td:first-child, .westbay td:first-child {
+  color: white;
+  font-size: 2.25rem;
+}
+
+strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* END TABLE */
+
+/* Start Regions -- Northbay */
+
+#northbay, #eastbay, #deltabay, #southbay, #westbay {
+  
+}
+
+#nav-bar {
+  margin: 1rem;
+  position: relative;
+}
+
+.northbay td:first-child {
+  background-color: hsla(158, 100%, 11%, 1);
+}
+
+.northbay tr:nth-child(2n+1) {
+  background-color:hsla(150, 100%, 51%, 1);
+}
+
+.northbay tr:nth-child(even) {
+  background-color: hsla(150, 100%, 71%, 1);
+}
+
+nav.region {
+  width: 100%;
+}
+
+.region a {
+  background-color: white;
+}
+
+.regionnav {
+  text-align: center;
+  background-color:  hsla(50,10%,55%,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.regionnav a {
+  box-shadow: 1px 2px 1px 1px hsla(0,10%,40%,1);
+}
+
+.regionnav a:first-child {
+  background-color: midnightblue;
+  color: white;
+}
+
+.regionnav a:hover:first-child {
+  background: radial-gradient(white, white, midnightblue);
+  color: black;
+}
+
+.regionnav a:active {
+  box-shadow: none;
+}
+
+.regionnav h3 {
+  margin: .25rem;
+  padding: .25rem;
+  color: red;
+  background-color: white;
+  border: 2px solid black;
+  width: 
+}
+
+/* End Northbay */
+
+/*Start Deltabay */
+
+.deltabay td {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.small div {
+  font-size: 1.6rem;
+}
+
+.deltabay td:first-child {
+  background-color: hsla(275, 100%, 15%, 1);
+}
+
+.deltabay tr:nth-child(2n+1) {
+  background-color: hsla(275, 100%, 35%, 1);
+}
+
+.deltabay tr:nth-child(even) {
+  background-color: hsla(275, 100%, 45%, 1);
+}
+
+/* End Deltabay */
+
+/* Start Eastbay */
+
+.eastbay td, u, strong, th {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* End Eastbay */
+
+/* Start Southbay */
+
+.southbay td:first-child {
+  background-color: hsla(311, 100%, 19%, 1);
+}
+
+.southbay tr:nth-child(2n+1) {
+  background-color: hsla(311, 100%, 29%, 1);
+}
+
+.southbay tr:nth-child(even) {
+  background-color: hsla(311, 100%, 39%, 1);
+}
+
+/* End Southbay */
+
+/* Start Westbay */
+
+/* End Westbay */
+
+/* Start Pursuit */
+
+.pursuit {
+  display: flex;
+  justify-content: center;
+}
+
+.pursuit a {
+  box-shadow: 4px 4px 7px grey;
+
+}
+
+.pursuit a:active {
+  box-shadow: none;
+}
+
+div.broadcast {
+  padding: 0 .75rem;
+}
+
+.broadcast p, .broadcast pre, .broadcast li {
+  font-size: 1.75rem;
+}
+
+.broadcast mark {
+  background-color: hsla(25, 100%, 55%, 1);/* orange */
+  font-style: italic;
+  font-family: arial;
+}
+
+/* End Pursuit */
+
+/* Start PIO */
+
+.pioguide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.pioguide h2 {
+  margin: 1rem;
+}
+
+#textpio {
+  font-size: 5rem;
+  border: none;
+  text-align: center;
+  width: 90%;
+}
+
+a#textpio:hover {
+  background-color: midnightblue;
+}
+
+/* End PIO */
+
+/* Dropdown Menu */
+
+/* Dropdown Button */
+.dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    background-color: transparent;
+    color: blue;
+    border: 2px solid black;
+    padding: 0 .5rem 0 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h4 img {
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: hsla(224, 93%, 13%, 0.25);
+    padding: .5rem;
+    margin-right: .35rem;
+}
+
+h4.dropbtn {
+    box-shadow: 4px 4px 7px 5px hsla(20, 20%, 20%, 0.75);
+    text-decoration: underline;
+    height: 100%;
+}
+
+.clear {
+    padding: .25rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    background: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 1rem 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.dropdown nav {
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    min-width: 9.5rem;
+    margin: .25rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown:hover {
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background: radial-gradient(midnightblue 8%, white);
+    color: white;
+}
