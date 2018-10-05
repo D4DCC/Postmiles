@@ -1517,13 +1517,9 @@ let county = document.getElementById('county').value;
 
             cross = key.CR.toUpperCase();
 
-            if(key.PM >= 0 && key.PM < 2){
+            key.Road = 715;
 
-                 key.Road = 715;
-
-             }
-
-             if(key.PM >= 0 && key.PM <= 2){
+            if(key.PM >= 0 && key.PM <= 2){
 
                  key.Landscape = 710;
 
