@@ -6519,10 +6519,10 @@ let county = document.getElementById('county').value;
 
     for(j = 0; j < output.length; j++){
     document.getElementById('outputPMS').innerHTML += `<div class="crossroad" id="" onclick="unitsPerRoute()"><a href="#" class="linkToUnit" id="showUnit" data-toggle="popover" title="Alias: ${output[j].Alias}" data-content="${output[j].Alias}" data-placement="bottom"><div class="flex-btw postMile"><div>${output[j].CR}</div><div class="postMile2"> - ${output[j].PM}</div></div></a></div>`;
-    document.getElementById('road').innerHTML += `<div class="road unit text-info bg-dark " data-toggle="popover" title="Road Handles: Debris, Potholes, Manholes, Sinkholes, 10-32 Animals, Hard Closures, Rock/Mudslides, Flooding" data-content="">Road: ${output[j].Road}</div>`;
-    document.getElementById('bridge').innerHTML += `<div class="bridge unit text-info bg-dark" data-toggle="popover" title="Bridge Handles: Fence & Guardrail/East Bay 723 & South Bay 662 handles OVERHEAD bridges Fences, Guardrail & Pumphouses" data-content="">Bridge: ${output[j].Bridge}</div>`;
-    document.getElementById('landscape').innerHTML += `<div class="landscape unit text-info bg-dark" data-toggle="popover" title="Landscape Handles: Irrigation, Low laying tree limbs, overgrown brush, homeless encampments" data-content="">LS: <br>${output[j].Landscape}</div>`;
-    document.getElementById('tree').innerHTML += `<div class="tree unit text-info bg-dark" data-toggle="popover" title="Tree Handles: Tree in the Travelway, trees that may fall" data-content="">Tree: ${output[j].Tree}</div>`;
+    document.getElementById('road').innerHTML += `<div class="road unit text-info bg-white" data-toggle="popover" title="Road Handles: Debris, Potholes, Manholes, Sinkholes, 10-32 Animals, Hard Closures, Rock/Mudslides, Flooding" data-content="">ROAD: ${output[j].Road}</div>`;
+    document.getElementById('bridge').innerHTML += `<div class="bridge unit text-info bg-white" data-toggle="popover" title="Bridge Handles: Fence & Guardrail/East Bay 723 & South Bay 662 handles OVERHEAD bridges Fences, Guardrail & Pumphouses" data-content="">BRIDGE: ${output[j].Bridge}</div>`;
+    document.getElementById('landscape').innerHTML += `<div class="landscape unit text-info bg-white" data-toggle="popover" title="Landscape Handles: Irrigation, Low laying tree limbs, overgrown brush, homeless encampments" data-content="">LS: <br>${output[j].Landscape}</div>`;
+    document.getElementById('tree').innerHTML += `<div class="tree unit text-info bg-white" data-toggle="popover" title="Tree Handles: Tree in the Travelway, trees that may fall" data-content="">TREE: ${output[j].Tree}</div>`;
     }
 
 

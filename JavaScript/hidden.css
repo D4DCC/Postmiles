@@ -71,10 +71,15 @@ h6 {
 
 #road div, #bridge div, #landscape div, #tree div {
 		text-align: center;
+		font-weight: bold;
 		min-height: 5rem;
-		padding: .5rem;
+		padding: .25rem;
+		box-shadow: 3px 3px 3px 3px black;
 }
 
+#road div:hover, #bridge div:hover, #landscape div:hover, #tree div:hover {
+		transform: scale(1.1);
+}
 
 div#outputPMS {
 		height: 30rem;
