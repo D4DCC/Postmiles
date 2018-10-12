@@ -139,22 +139,22 @@ let bgColor = ['blue', 'orange', 'green', 'violet']
         tree[i].style.display = 'none';
 
         if(target.innerHTML == output[i].CR || target.innerHTML == output[i].PM){
-          road[i].style.display = 'block';
-          road[i].style.backgroundColor = 'black';
-          road[i].style.color = 'white';
-          road[i].style.border = '2px solid white';
-          bridge[i].style.backgroundColor = 'black';
-          bridge[i].style.color = 'white';
-          bridge[i].style.display = 'block';
-          bridge[i].style.border = '2px solid white';
-          landscape[i].style.backgroundColor = 'black';
-          landscape[i].style.color = 'white';
-          landscape[i].style.display = 'block';
-          landscape[i].style.border = '2px solid white';
-          tree[i].style.backgroundColor = 'black';
-          tree[i].style.color = 'white';
-          tree[i].style.display = 'block';
-          tree[i].style.border = '2px solid white';
+            road[i].style.display = 'block';
+            road[i].style.backgroundColor = 'black';
+            road[i].style.color = 'white';
+            road[i].style.border = '2px solid black';
+            bridge[i].style.backgroundColor = 'black';
+            bridge[i].style.color = 'white';
+            bridge[i].style.display = 'block';
+            bridge[i].style.border = '2px solid black';
+            landscape[i].style.backgroundColor = 'black';
+            landscape[i].style.color = 'white';
+            landscape[i].style.display = 'block';
+            landscape[i].style.border = '2px solid black';
+            tree[i].style.backgroundColor = 'black';
+            tree[i].style.color = 'white';
+            tree[i].style.display = 'block';
+            tree[i].style.border = '2px solid black';
         }
     }
 }
@@ -347,13 +347,13 @@ let county = document.getElementById('county').value;
 
             cross = key.CR.toUpperCase();
 
-            if(key.PM >= 4.3 && key.PM <= 9){
+            if(key.PM >= 14.8 && key.PM <= 18.5){
 
-                key.Road = 000;
+                key.Road = 707;
 
-            } else if (key.PM >=9 && key.PM <= 10.1 || key.PM >= 13.4 && key.PM <= 13.9){
+            } else if (key.PM >=18.6 && key.PM <= 21.8){
 
-                key.Road = 000;
+                key.Road = 715;
 
             } else {
 
@@ -361,9 +361,9 @@ let county = document.getElementById('county').value;
 
             }
 
-            if(key.PM >= 4 && key.PM <= 9.9){
+            if(key.PM >= 18.6 && key.PM <= 21.8){
 
-                key.Landscape = 000;
+                key.Landscape = 718;
 
             } else if (key.PM >= 13.4 && key.PM <= 13.9){
 
@@ -1609,9 +1609,9 @@ let county = document.getElementById('county').value;
 
             }
 
-            key.Bridge = 000;
+            key.Bridge = 630;
 
-            key.Tree = 000;
+            key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
 
@@ -1765,9 +1765,9 @@ let county = document.getElementById('county').value;
 
             }
 
-            key.Bridge = 000;
+            key.Bridge = 630;
 
-            key.Tree = 000;
+            key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
 
@@ -1810,77 +1810,46 @@ let county = document.getElementById('county').value;
     if(county == 'CC' && route == '123'){
 
         for(var c in CC123){
-
             key = CC123[c];
-
             cross = key.CR.toUpperCase();
 
             if(key.PM >= 4.3 && key.PM <= 9){
-
                 key.Road = 000;
-
             } else if (key.PM >=9 && key.PM <= 10.1 || key.PM >= 13.4 && key.PM <= 13.9){
-
                 key.Road = 000;
-
             } else {
-
                 key.Road = 000;
-
             }
 
             if(key.PM >= 4 && key.PM <= 9.9){
-
                 key.Landscape = 000;
-
             } else if (key.PM >= 13.4 && key.PM <= 13.9){
-
                 key.Landscape = 000;
-
             } else {
-
                 key.Landscape = 000;
-
             }
 
-            key.Bridge = 000;
-
-            key.Tree = 000;
+            key.Bridge = 630;
+            key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
-
                 final.push(key);
-
                 for(cr = 0; cr < final.length; cr++){
-
                     amp = final[cr].CR;
-
                     for(sand = 0; sand < amp.length; sand++){
-
                         if(amp[sand] == '&'){
-
                             if(amp[sand + 1] != 'a'){
-
                                 final[cr].CR = amp.slice(0, sand + 1) + 'amp;' + amp.slice(sand + 1, amp.length);
-
                             }
-
                         }
-
                     }
-
                 }
-
             }
 
             if(cross.search(keyword) != -1){
-
-              output.push(key);
-
+                output.push(key);
             }
-
         }
-
     }
 
     /* ***************************** CC 160 ******************************* */
@@ -1921,9 +1890,8 @@ let county = document.getElementById('county').value;
 
             }
 
-            key.Bridge = 000;
-
-            key.Tree = 000;
+            key.Bridge = 630;
+            key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
 
@@ -2004,171 +1972,110 @@ let county = document.getElementById('county').value;
             key.Tree = 000;
 
             if(cross.indexOf('&') != -1){
-
                 final.push(key);
-
                 for(cr = 0; cr < final.length; cr++){
-
                     amp = final[cr].CR;
-
                     for(sand = 0; sand < amp.length; sand++){
-
                         if(amp[sand] == '&'){
-
                             if(amp[sand + 1] != 'a'){
-
                                 final[cr].CR = amp.slice(0, sand + 1) + 'amp;' + amp.slice(sand + 1, amp.length);
-
                             }
-
                         }
-
                     }
-
                 }
-
             }
 
             if(cross.search(keyword) != -1){
-
-              output.push(key);
-
+                output.push(key);
             }
-
         }
-
     }
 
     /* ***************************** CC 580 ******************************* */
 
     if(county == 'CC' && route == '580'){
-
         for(var c in CC580){
-
             key = CC580[c];
-
             cross = key.CR.toUpperCase();
 
             if(key.PM >= 0 && key.PM <= 6.15){
-
                 key.Road = 692;
-
+            } else {
+                key.Road = 'Tollbridge';
             }
 
             if(key.PM >= 0 && key.PM <= 13.6){
-
                 key.Landscape = 693;
-
             }
 
-            key.Bridge = 695;
+            if(key.PM >= 0 && key.PM <= 6.22){
+                key.Bridge = 630;
+            } else {
+                key.Bridge = 695;
+            }
 
             key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
-
                 final.push(key);
-
                 for(cr = 0; cr < final.length; cr++){
-
                     amp = final[cr].CR;
-
                     for(sand = 0; sand < amp.length; sand++){
-
                         if(amp[sand] == '&'){
-
                             if(amp[sand + 1] != 'a'){
-
                                 final[cr].CR = amp.slice(0, sand + 1) + 'amp;' + amp.slice(sand + 1, amp.length);
-
                             }
-
                         }
-
                     }
-
                 }
-
             }
 
             if(cross.search(keyword) != -1){
-
-              output.push(key);
-
+                output.push(key);
             }
-
         }
-
     }
 
     /* ***************************** CC 680 ******************************* */
 
     if(county == 'CC' && route == '680'){
-
         for(var c in CC680){
-
             key = CC680[c];
-
             cross = key.CR.toUpperCase();
 
             if(key.PM >= 0 && key.PM <= 25.04){
-
                  key.Road = 694;
-
              }
 
              if(key.PM >= 0 && key.PM <= 11.8){
-
                  key.Landscape = 649;
-
              } else if (key.PM >= 11.81 && key.PM <= 14.3){
-
                  key.Landscape = 699;
-
              } else {
-
                  key.Landscape = 702;
-
              }
 
              key.Bridge = 695;
-
              key.Tree = 716;
 
             if(cross.indexOf('&') != -1){
-
                 final.push(key);
-
                 for(cr = 0; cr < final.length; cr++){
-
                     amp = final[cr].CR;
-
                     for(sand = 0; sand < amp.length; sand++){
-
                         if(amp[sand] == '&'){
-
                             if(amp[sand + 1] != 'a'){
-
                                 final[cr].CR = amp.slice(0, sand + 1) + 'amp;' + amp.slice(sand + 1, amp.length);
-
                             }
-
                         }
-
                     }
-
                 }
-
             }
 
             if(cross.search(keyword) != -1){
-
-              output.push(key);
-
+                output.push(key);
             }
-
         }
-
     }
 
     /* ***************************** LAKE ******************************* */
@@ -6519,10 +6426,10 @@ let county = document.getElementById('county').value;
 
     for(j = 0; j < output.length; j++){
     document.getElementById('outputPMS').innerHTML += `<div class="crossroad" id="" onclick="unitsPerRoute()"><a href="#" class="linkToUnit" id="showUnit" data-toggle="popover" title="Alias: ${output[j].Alias}" data-content="${output[j].Alias}" data-placement="bottom"><div class="flex-btw postMile"><div>${output[j].CR}</div><div class="postMile2"> - ${output[j].PM}</div></div></a></div>`;
-    document.getElementById('road').innerHTML += `<div class="road unit text-info bg-white" data-toggle="popover" title="Road Handles: Debris, Potholes, Manholes, Sinkholes, 10-32 Animals, Hard Closures, Rock/Mudslides, Flooding" data-content="">ROAD: ${output[j].Road}</div>`;
-    document.getElementById('bridge').innerHTML += `<div class="bridge unit text-info bg-white" data-toggle="popover" title="Bridge Handles: Fence & Guardrail/East Bay 723 & South Bay 662 handles OVERHEAD bridges Fences, Guardrail & Pumphouses" data-content="">BRIDGE: ${output[j].Bridge}</div>`;
+    document.getElementById('road').innerHTML += `<div class="road unit text-info bg-white" data-toggle="popover" title="Road Handles: Debris, Potholes, Manholes, Sinkholes, 10-32 Animals, Hard Closures, Rock/Mudslides, Flooding" data-content="">ROAD: <br>${output[j].Road}</div>`;
+    document.getElementById('bridge').innerHTML += `<div class="bridge unit text-info bg-white" data-toggle="popover" title="Bridge Handles: Fence & Guardrail/East Bay 723 & South Bay 662 handles OVERHEAD bridges Fences, Guardrail & Pumphouses" data-content="">BRIDGE: <br>${output[j].Bridge}</div>`;
     document.getElementById('landscape').innerHTML += `<div class="landscape unit text-info bg-white" data-toggle="popover" title="Landscape Handles: Irrigation, Low laying tree limbs, overgrown brush, homeless encampments" data-content="">LS: <br>${output[j].Landscape}</div>`;
-    document.getElementById('tree').innerHTML += `<div class="tree unit text-info bg-white" data-toggle="popover" title="Tree Handles: Tree in the Travelway, trees that may fall" data-content="">TREE: ${output[j].Tree}</div>`;
+    document.getElementById('tree').innerHTML += `<div class="tree unit text-info bg-white" data-toggle="popover" title="Tree Handles: Tree in the Travelway, trees that may fall" data-content="">TREE: <br>${output[j].Tree}</div>`;
     }
 
 
