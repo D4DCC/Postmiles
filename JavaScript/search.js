@@ -139,18 +139,22 @@ let bgColor = ['blue', 'orange', 'green', 'violet']
         tree[i].style.display = 'none';
 
         if(target.innerHTML == output[i].CR || target.innerHTML == output[i].PM){
-            road[i].style.display = 'block';
-            road[i].style.backgroundColor = 'black';
-            road[i].style.color = 'white';
-            bridge[i].style.backgroundColor = 'black';
-            bridge[i].style.color = 'white';
-            bridge[i].style.display = 'block';
-            landscape[i].style.backgroundColor = 'black';
-            landscape[i].style.color = 'white';
-            landscape[i].style.display = 'block';
-            tree[i].style.backgroundColor = 'black';
-            tree[i].style.color = 'white';
-            tree[i].style.display = 'block';
+          road[i].style.display = 'block';
+          road[i].style.backgroundColor = 'black';
+          road[i].style.color = 'white';
+          road[i].style.border = '2px solid white';
+          bridge[i].style.backgroundColor = 'black';
+          bridge[i].style.color = 'white';
+          bridge[i].style.display = 'block';
+          bridge[i].style.border = '2px solid white';
+          landscape[i].style.backgroundColor = 'black';
+          landscape[i].style.color = 'white';
+          landscape[i].style.display = 'block';
+          landscape[i].style.border = '2px solid white';
+          tree[i].style.backgroundColor = 'black';
+          tree[i].style.color = 'white';
+          tree[i].style.display = 'block';
+          tree[i].style.border = '2px solid white';
         }
     }
 }
@@ -6517,7 +6521,7 @@ let county = document.getElementById('county').value;
     document.getElementById('outputPMS').innerHTML += `<div class="crossroad" id="" onclick="unitsPerRoute()"><a href="#" class="linkToUnit" id="showUnit" data-toggle="popover" title="Alias: ${output[j].Alias}" data-content="${output[j].Alias}" data-placement="bottom"><div class="flex-btw postMile"><div>${output[j].CR}</div><div class="postMile2"> - ${output[j].PM}</div></div></a></div>`;
     document.getElementById('road').innerHTML += `<div class="road unit text-info bg-dark " data-toggle="popover" title="Road Handles: Debris, Potholes, Manholes, Sinkholes, 10-32 Animals, Hard Closures, Rock/Mudslides, Flooding" data-content="">Road: ${output[j].Road}</div>`;
     document.getElementById('bridge').innerHTML += `<div class="bridge unit text-info bg-dark" data-toggle="popover" title="Bridge Handles: Fence & Guardrail/East Bay 723 & South Bay 662 handles OVERHEAD bridges Fences, Guardrail & Pumphouses" data-content="">Bridge: ${output[j].Bridge}</div>`;
-    document.getElementById('landscape').innerHTML += `<div class="landscape unit text-info bg-dark" data-toggle="popover" title="Landscape Handles: Irrigation, Low laying tree limbs, overgrown brush, homeless encampments" data-content="">LS: ${output[j].Landscape}</div>`;
+    document.getElementById('landscape').innerHTML += `<div class="landscape unit text-info bg-dark" data-toggle="popover" title="Landscape Handles: Irrigation, Low laying tree limbs, overgrown brush, homeless encampments" data-content="">LS: <br>${output[j].Landscape}</div>`;
     document.getElementById('tree').innerHTML += `<div class="tree unit text-info bg-dark" data-toggle="popover" title="Tree Handles: Tree in the Travelway, trees that may fall" data-content="">Tree: ${output[j].Tree}</div>`;
     }
 

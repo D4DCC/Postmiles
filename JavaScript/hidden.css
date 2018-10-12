@@ -59,14 +59,20 @@ h6 {
 }
 
 .unit {
-    margin: .5rem;
+    margin-top: 1rem;
 		background-color: black;
     display: none;
 }
 
 #road, #bridge, #landscape, #tree {
     font-size: 1.5rem;
-		width: 5.6rem;
+		width: 6.5rem;
+}
+
+#road div, #bridge div, #landscape div, #tree div {
+		text-align: center;
+		min-height: 5rem;
+		padding: .5rem;
 }
 
 
