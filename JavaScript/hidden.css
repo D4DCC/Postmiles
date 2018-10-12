@@ -60,18 +60,13 @@ h6 {
 
 .unit {
     margin: .5rem;
-		margin-left: 10rem;
-		margin-right: auto;
 		background-color: black;
     display: none;
 }
 
 #road, #bridge, #landscape, #tree {
-		margin: 0;
-		padding: 0;
-		width: 5.6rem;
-		text-align: center;
     font-size: 1.5rem;
+		width: 5.6rem;
 }
 
 
